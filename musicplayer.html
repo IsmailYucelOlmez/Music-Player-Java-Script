@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music PLayer</title>
+    <link rel="stylesheet" href="musicplayer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <p>Music Player</p>  
+        </div>
+        <div class="music">
+            <div class="music-picture">
+                <img src="" alt="" id="music-pic">
+                <audio id="audio" src=""></audio>
+            </div>
+            <div class="music-info">
+                <p class="music-info-text">Deneme</p>
+            </div>
+           
+        </div>
+        <div class="progress-bar">
+            <input type="range" name="" id="time-bar"  value="0">
+            <div class="music-time">
+                <p class="music-time-text current-time"></p>
+                <p class="music-time-text duration"></p>
+            </div>
+            <div class="buttons">
+                <button onclick="prevSong()" class="btn prev-button"><i class="fa-solid fa-backward-step"></i></button>
+                <button class="btn pause-play-button"><i class="fa-solid fa-play"></i></button>  
+                <button onclick="nextSong()" class="btn next-button"><i class="fa-solid fa-forward-step"></i></button>
+             
+            </div>  
+        </div>
+        <div class="footer">
+
+            <div class="list-img">
+
+                <i onclick="showList()" class="fa-solid fa-bars"></i>
+
+            </div>
+
+            <div class="volume-bar-field">
+
+                <i class="fa-solid fa-volume-high"></i>
+                <div class="volume-bar-field">
+                    <input type="range" id="volume-bar" max="100" value="100">
+                </div> 
+
+            </div>
+           
+        </div>
+        <div class="hide music-list">
+           <!-- <div onclick="changeviaList()" class="song"><p class="song-text"></p><p class="song-duration">5:22</p></div>
+           <div onclick="changeviaList()" class="song"><p class="song-text"></p><p class="song-duration">8:24</p></div>
+           <div onclick="changeviaList()" class="song"><p class="song-text"></p><p class="song-duration">7:28</p></div> -->
+        </div>
+
+    </div>
+    
+   
+    <script src="operations.js"></script>
+</body>
+
+
+
+</html>
